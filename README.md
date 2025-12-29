@@ -33,7 +33,7 @@ The core logic resides in `src/mlp_model.py`.
 * **Loss Function:** Binary Cross-Entropy (Log Loss).
 * **Initialization:** Gaussian distribution ($\mu=0, \sigma=0.01$).
 
-![MLP Architecture](images/mlp_architecture_diagram.png)
+![MLP Architecture](graphs_&_stats/mlp_architecture_diagram.png)
 *(Generated via `src/generate_diagram.py`)*
 
 ### Meta-Optimization Strategy
@@ -70,7 +70,7 @@ To ensure the model isn't a "Black Box", we applied **SHAP (SHapley Additive exP
 * **ST Depression (`oldpeak`):** Identified as a top risk factor. High values (Red) push the prediction towards disease.
 * **Max Heart Rate (`thalach`):** Correctly identified as inversely related to risk (higher capacity = healthier heart).
 
-![SHAP Summary](images/shap_summary_beeswarm.png)
+![SHAP Summary](graphs_&_stats/shap_summary_beeswarm.png)
 
 ---
 
